@@ -1,0 +1,9 @@
+[package]
+name = "ntex-compile-error"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+nanocl_utils = { version = "0.7.0", features = ["ntex"] }
+ntex = { version = "2.8.0", features = ["tokio"] }
+ntex-cors = "2.0.0"
