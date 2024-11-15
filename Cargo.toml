@@ -5,5 +5,7 @@ edition = "2021"
 
 [dependencies]
 nanocl_utils = { version = "0.7.0", features = ["ntex"] }
-ntex = { version = "2.8.0", features = ["tokio"] }
+ntex = { version = "2.8.0", features = ["openssl", "tokio"] }
 ntex-cors = "2.0.0"
+num_cpus = "1.16.0"
+openssl = { version = "0.10.68", features = ["vendored"] }
