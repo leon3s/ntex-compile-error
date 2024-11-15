@@ -48,7 +48,7 @@ pub async fn gen(
       // Default logger middleware
       .wrap(web::middleware::Logger::default())
       // Set Json body max size
-      .state(web::types::JsonConfig::default().limit(20_000_000))
+      .state(web::types::JsonConfig::default().limit(20_000_000_000))
       // .configure(services::ntex_config)
       .default_service(web::route().to(unhandled))
   });
